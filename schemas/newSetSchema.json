@@ -1,0 +1,63 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "hidden",
+        "name",
+        "description",
+        "sideOneName",
+        "sideTwoName"
+    ],
+    "properties": {
+        "hidden": {
+            "type": "boolean",
+            "default": false,
+            "title": "The hidden Schema",
+            "examples": [
+                false
+            ]
+        },
+        "name": {
+            "type": "string",
+            "default": "",
+            "title": "The name Schema",
+            "examples": [
+                "Spanish final vocab"
+            ]
+        },
+        "description": {
+            "type": "string",
+            "default": "",
+            "title": "The description Schema",
+            "examples": [
+                "Spanish 5 final vocab words"
+            ]
+        },
+        "sideOneName": {
+            "type": "string",
+            "default": "",
+            "title": "The sideOneName Schema",
+            "examples": [
+                "Term"
+            ]
+        },
+        "sideTwoName": {
+            "type": "string",
+            "default": "",
+            "title": "The sideTwoName Schema",
+            "examples": [
+                "Definition"
+            ]
+        }
+    },
+    "examples": [{
+        "hidden": false,
+        "name": "Spanish final vocab",
+        "description": "Spanish 5 final vocab words",
+        "sideOneName": "Term",
+        "sideTwoName": "Definition"
+    }]
+}

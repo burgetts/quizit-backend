@@ -1,0 +1,58 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "anyOf": [
+        { "required":
+          [ "sideOneText", "sideTwoText" ] },
+        { "required":
+          [ "sideOneImageUrl", "sideTwoImageUrl" ] },
+        { "required":
+          [ "sideOneText", "sideTwoImageUrl" ] },
+          { "required":
+          [ "sideOneImageUrl", "sideTwoText" ] }
+      ],
+    "properties": {
+        "sideOneText": {
+            "type": "string",
+            "default": "",
+            "title": "The sideOneText Schema",
+            "examples": [
+                "C2H5NO2"
+            ]
+        },
+        "sideTwoText": {
+            "type": "string",
+            "default": "",
+            "title": "The sideTwoText Schema",
+            "examples": [
+                "Glycine"
+            ]
+        },
+        "sideOneImageUrl": {
+            "type": "string",
+            "default": "",
+            "title": "The sideOneImageUrl Schema",
+            "examples": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/3f/Glycine-2D-skeletal.png"
+            ]
+        },
+        "sideTwoImageUrl": {
+            "type": "string",
+            "default": "",
+            "title": "The sideTwoImageUrl Schema",
+            "examples": [
+                "https://upload.wikimedia.org/wikipedia/commons/3/3f/Glycine-2D-skeletal.png"
+            ]
+        }
+    },
+    "examples": [{
+        "sideOneText": "C2H5NO2",
+        "sideTwoText": "Glycine",
+        "sideOneImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Glycine-2D-skeletal.png",
+        "sideTwoImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Glycine-2D-skeletal.png"
+    }]
+}
+

@@ -1,0 +1,43 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "firstName",
+        "email",
+        "profilePicture"
+    ],
+    "properties": {
+        "firstName": {
+            "type": "string",
+            "default": "",
+            "title": "The firstName Schema",
+            "examples": [
+                "Stevie"
+            ]
+        },
+        "email": {
+            "type": "string",
+            "default": "",
+            "title": "The email Schema",
+            "examples": [
+                "stevie@website.com"
+            ]
+        },
+        "profilePicture": {
+            "type": "string",
+            "default": "",
+            "title": "The profilePicture Schema",
+            "examples": [
+                "profilePicture"
+            ]
+        }
+    },
+    "examples": [{
+        "firstName": "Stevie",
+        "email": "stevie@website.com",
+        "profilePicture": "profilePicture"
+    }]
+}

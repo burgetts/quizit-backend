@@ -1,0 +1,43 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "name",
+        "description",
+        "groupPicture"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "default": "",
+            "title": "The name Schema",
+            "examples": [
+                "MCAT Study Group"
+            ]
+        },
+        "description": {
+            "type": "string",
+            "default": "",
+            "title": "The description Schema",
+            "examples": [
+                "A group for people taking the MCAT in spring 2023"
+            ]
+        },
+        "groupPicture": {
+            "type": "string",
+            "default": "",
+            "title": "The groupPicture Schema",
+            "examples": [
+                "https://pbs.twimg.com/profile_images/877190251864883200/7RTFEvYM_400x400.jpg"
+            ]
+        }
+    },
+    "examples": [{
+        "name": "MCAT Study Group",
+        "description": "A group for people taking the MCAT in spring 2023",
+        "groupPicture": "https://pbs.twimg.com/profile_images/877190251864883200/7RTFEvYM_400x400.jpg"
+    }]
+}
