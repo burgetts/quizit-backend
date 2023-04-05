@@ -43,6 +43,7 @@ router.get('/:username', async function (req, res, next){
         if (res.locals.user.username !== user.username) delete user.email
         return res.send({user})
     } catch(e) {
+        console.log('problem')
         next(e)
     }
 })
