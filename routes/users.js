@@ -35,8 +35,11 @@ router.get('/', ensureLoggedIn, async function (req, res, next){
  */
 router.get('/:username', async function (req, res, next){
     try {
+        console.log('now in backend GET/:username route')
         const username = req.params.username
+        console.log('getting User from database')
         const user = await User.get(username)
+        console.log('user retrieved from database', user)
         if (res.locals.user.username !== user.username) delete user.email
         return res.send({user})
     } catch(e) {
