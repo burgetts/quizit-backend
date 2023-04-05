@@ -19,11 +19,12 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use(authenticateJWT)
+
 // app.use(morgan("tiny"));
+app.use('/auth', authRoutes)
+app.use(authenticateJWT)
 app.use('/flashcards', flashcardRoutes)
 app.use('/users', userRoutes)
-app.use('/auth', authRoutes)
 app.use('/sets', setRoutes)
 app.use('/groups', groupRoutes)
 
