@@ -27,7 +27,7 @@ CREATE TABLE "groups" (
   "name" VARCHAR(50) NOT NULL,
   "description" VARCHAR(100) NOT NULL,
   "group_picture" VARCHAR DEFAULT 'https://geodash.gov.bd/uploaded/people_group/default_group.png',
-  "created_by" VARCHAR NOT NULL,
+  "created_by" VARCHAR NOT NULL
 );
 
 CREATE TABLE "groups_sets" (
