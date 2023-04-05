@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "node server.js --port ${5432}"
+    "start": "node server.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
