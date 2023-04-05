@@ -33,7 +33,7 @@ router.get('/', ensureLoggedIn, async function (req, res, next){
  * 
  *  Authorization required: Must be logged in
  */
-router.get('/:username', ensureLoggedIn, async function (req, res, next){
+router.get('/:username', async function (req, res, next){
     try {
         const username = req.params.username
         const user = await User.get(username)
