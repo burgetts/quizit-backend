@@ -10,7 +10,7 @@ const { ensureLoggedIn } = require("../middleware/auth")
 const Group = require('../models/group')
 const Flashcard = require("../models/flashcard")
 const Post = require("../models/post")
-const User = require('../models/User')
+const User = require('../models/user')
 
 const newGroupSchema = require("../schemas/newGroupSchema.json");
 const updateGroupSchema = require("../schemas/updateGroupSchema.json")
